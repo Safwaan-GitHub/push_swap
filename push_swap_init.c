@@ -6,7 +6,7 @@
 /*   By: sanoor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 18:50:02 by sanoor            #+#    #+#             */
-/*   Updated: 2024/03/16 22:14:39 by sanoor           ###   ########.fr       */
+/*   Updated: 2024/03/17 15:55:01 by sanoor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	set_current_position(t_stack_node *stack)
 		if (i <= centerline)
 			stack->above_median = true;
 		else
-			stack->above_media = false;
+			stack->above_median = false;
 		stack = stack->next;
 		++i;
 	}
@@ -66,8 +66,8 @@ void	set_price(t_stack_node *a, t_stack_node *b)
 	int	len_a;
 	int	len_b;
 
-	len_a = stack_len(len_a);
-	len_b = stack_len(len_b);
+	len_a = stack_len(a);
+	len_b = stack_len(b);
 
 	b->push_price = b->current_position;
 	while (b)

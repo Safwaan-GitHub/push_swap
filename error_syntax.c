@@ -6,7 +6,7 @@
 /*   By: sanoor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 20:34:16 by sanoor            #+#    #+#             */
-/*   Updated: 2024/03/13 21:13:00 by sanoor           ###   ########.fr       */
+/*   Updated: 2024/03/17 15:57:43 by sanoor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void	error_free(t_stack_node **a, char **av, bool av_is_2)
 	exit(1);
 }
 
-int	error_repitition(t_stack_node *a, int nbr)
+int	error_repetition(t_stack_node *a, int nbr)
 {
 	if (a == NULL)
 		return (0);

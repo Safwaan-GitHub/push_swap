@@ -6,11 +6,11 @@
 /*   By: sanoor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 17:55:07 by sanoor            #+#    #+#             */
-/*   Updated: 2024/03/15 18:48:37 by sanoor           ###   ########.fr       */
+/*   Updated: 2024/03/17 15:56:27 by sanoor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.c"
+#include "push_swap.h"
 
 bool	stack_sorted(t_stack_node *stack)
 {
@@ -51,11 +51,11 @@ void	tiny_sort(t_stack_node **a)
 
 	highest_node = find_highest(*a);
 	if (*a == highest_node)
-		ra(a);
+		ra(a, false);
 	else if ((*a)->next == highest_node)
-		rra(a);
+		rra(a, false);
 	if ((*a)->value > (*a)->next->value)
-		sa(a);
+		sa(a, false);
 }
 
 void	handle_five(t_stack_node **a, t_stack_node **b)

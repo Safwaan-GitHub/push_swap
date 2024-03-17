@@ -6,7 +6,7 @@
 /*   By: sanoor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 18:28:41 by sanoor            #+#    #+#             */
-/*   Updated: 2024/03/14 18:42:02 by sanoor           ###   ########.fr       */
+/*   Updated: 2024/03/17 15:53:36 by sanoor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static void	push(t_stack_node **dest, t_stack_node **src)
 	t_stack_node	*node_to_push;
 	
 	if (*src == NULL)
-		return (NULL);
+		return ;
 	node_to_push = *src;
 	*src = (*src)->next;
 	if (*src)
