@@ -6,7 +6,7 @@
 #    By: sanoor <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/17 15:49:47 by sanoor            #+#    #+#              #
-#    Updated: 2024/03/17 15:53:02 by sanoor           ###   ########.fr        #
+#    Updated: 2024/03/18 04:45:43 by sanoor           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,16 +30,12 @@ $(ARCHIVE) : $(OBJS)
 %.o : %.c 
 	$(CC) $(CFLAGS) -c $< -o $@ 
 
-bonus : 
-	cd ../checker && make
-	
 clean :
 	rm -f $(OBJS) $(ARCHIVE)
 
 fclean : clean
 	rm -f $(NAME)
-	cd ../checker && make fclean
 
 re : fclean all
 
-.PHONY : all clean fclea re
+.PHONY : all clean fclean re

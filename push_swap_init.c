@@ -6,7 +6,7 @@
 /*   By: sanoor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 18:50:02 by sanoor            #+#    #+#             */
-/*   Updated: 2024/03/17 15:55:01 by sanoor           ###   ########.fr       */
+/*   Updated: 2024/03/18 04:44:10 by sanoor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,9 +69,9 @@ void	set_price(t_stack_node *a, t_stack_node *b)
 	len_a = stack_len(a);
 	len_b = stack_len(b);
 
-	b->push_price = b->current_position;
 	while (b)
 	{
+		b->push_price = b->current_position;
 		if (!(b->above_median))
 			b->push_price = (len_b - b->current_position);
 		if (b->target_node->above_median)
