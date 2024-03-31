@@ -6,7 +6,7 @@
 /*   By: sanoor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 16:47:09 by sanoor            #+#    #+#             */
-/*   Updated: 2024/03/14 17:21:41 by sanoor           ###   ########.fr       */
+/*   Updated: 2024/03/31 17:25:46 by sanoor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,9 @@ int	countword(char *str, char c)
 static char	*get_word(char *str, char c)
 {
 	static int	count = 0;
-	int		i;
-	int		len;
-	char	*word;
+	int			i;
+	int			len;
+	char		*word;
 
 	i = 0;
 	len = 0;
@@ -79,7 +79,7 @@ char	**ft_split(char *str, char c)
 			if (words[i] == NULL)
 				return (NULL);
 			words[i++][0] = '\0';
-			continue;
+			continue ;
 		}
 		words[i++] = get_word(str, c);
 	}

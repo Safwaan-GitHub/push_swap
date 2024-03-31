@@ -6,7 +6,7 @@
 /*   By: sanoor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/16 22:33:49 by sanoor            #+#    #+#             */
-/*   Updated: 2024/03/17 15:42:39 by sanoor           ###   ########.fr       */
+/*   Updated: 2024/03/31 17:26:16 by sanoor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,10 +63,10 @@ static void	move_nodes(t_stack_node **a, t_stack_node **b)
 
 	cheapest_node = return_cheapest(*b);
 	if (cheapest_node->above_median
-			&& cheapest_node->target_node->above_median)
+		&& cheapest_node->target_node->above_median)
 		rotate_both(a, b, cheapest_node);
 	else if (!(cheapest_node->above_median)
-			&& !(cheapest_node->target_node->above_median))
+		&& !(cheapest_node->target_node->above_median))
 		reverse_rotate_both(a, b, cheapest_node);
 	finish_rotation(b, cheapest_node, 'b');
 	finish_rotation(a, cheapest_node->target_node, 'a');

@@ -6,12 +6,12 @@
 /*   By: sanoor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 20:13:53 by sanoor            #+#    #+#             */
-/*   Updated: 2024/03/17 15:47:50 by sanoor           ###   ########.fr       */
+/*   Updated: 2024/03/31 17:32:13 by sanoor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP
-# define PUSH_SWAP
+#ifndef PUSH_SWAP_H
+# define PUSH_SWAP_H
 
 # include <stdlib.h>
 # include <limits.h>

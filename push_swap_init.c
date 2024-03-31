@@ -6,7 +6,7 @@
 /*   By: sanoor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 18:50:02 by sanoor            #+#    #+#             */
-/*   Updated: 2024/03/18 04:44:10 by sanoor           ###   ########.fr       */
+/*   Updated: 2024/03/31 17:26:54 by sanoor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ static void	set_target_node(t_stack_node *a, t_stack_node *b)
 		current_a = a;
 		while (current_a)
 		{
-			if (current_a->value > b->value &&
-					current_a->value < best_match_index)
+			if (current_a->value > b->value
+				&& current_a->value < best_match_index)
 			{
 				best_match_index = current_a->value;
 				target_node = current_a;
@@ -68,7 +68,6 @@ void	set_price(t_stack_node *a, t_stack_node *b)
 
 	len_a = stack_len(a);
 	len_b = stack_len(b);
-
 	while (b)
 	{
 		b->push_price = b->current_position;

@@ -6,7 +6,7 @@
 /*   By: sanoor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 20:34:16 by sanoor            #+#    #+#             */
-/*   Updated: 2024/03/17 15:57:43 by sanoor           ###   ########.fr       */
+/*   Updated: 2024/03/31 17:22:06 by sanoor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,12 +65,12 @@ int	error_repetition(t_stack_node *a, int nbr)
 
 int	error_syntax(char *str_nbr)
 {
-	if (!(*str_nbr == '+' || *str_nbr == '-' ||
-				(*str_nbr >= '0' && *str_nbr <= '9')))
+	if (!(*str_nbr == '+' || *str_nbr == '-'
+			|| (*str_nbr >= '0' && *str_nbr <= '9')))
 		return (1);
-	if ((*str_nbr == '+' || *str_nbr == '-') &&
-				!(str_nbr[1] >= '0' && str_nbr[1] <= '9'))
-			return (1);
+	if ((*str_nbr == '+' || *str_nbr == '-')
+		&& !(str_nbr[1] >= '0' && str_nbr[1] <= '9'))
+		return (1);
 	while (*++str_nbr)
 		if (!(*str_nbr >= '0' && *str_nbr <= '9'))
 			return (1);
