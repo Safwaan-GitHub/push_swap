@@ -56,5 +56,3 @@ Where x is any integer number/series of numbers
 
 Algorithm Complexity: Understanding and implementing efficient sorting algorithms.
 Optimization: Learning to optimize the sorting process to reduce the number of operations.
-
-Big thanks to Oceano; https://github.com/suspectedoceano for the ideas and inspiration!
