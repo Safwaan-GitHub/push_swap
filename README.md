@@ -44,7 +44,7 @@ Output: It outputs the series of operations that sort the stack, which can be ap
 ```
 ./push_swap x
 ```
-Where x is any number/series of numbers
+Where x is any integer number/series of numbers
 ```
 ./push_swap 1 3
 ```
