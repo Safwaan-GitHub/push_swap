@@ -1,11 +1,16 @@
 # Push Swap Project
 
-## Overview
-
 The Push Swap project is a highly efficient sorting challenge where the main objective is to sort a stack of numbers with a minimal set of operations. Utilizing two stacks, a and b, the goal is to take an unordered list of integers, apply a series of operations, and end up with the numbers sorted in ascending order in stack a.
 
 This project not only tests your understanding of basic sorting algorithms but also challenges you to optimize your approach to minimize the number of operations used. It's a perfect blend of problem-solving, efficiency, and algorithm optimization.
 How It Works
+
+## Table of Contents
+- [Installation](#installation)
+- [Initial Setup](#initialSetup)
+- [Features](#features)
+- [Usage](#usage)
+- [Challenges and Learnings](#challengesandlearnings)
 
 ## Installation
 
